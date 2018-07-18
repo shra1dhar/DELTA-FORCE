@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Recruitment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One|Permanent+Marker|Marck+Script" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style>
+    body{
+        overflow: hidden;
+    }
+</style>
+<body>
+    <div class="overlay"></div>
+    <div class="title">DELTA FORCE</div>
+    <img class="logo" src="img/logo.png" alt=".">
+    <img class="logo2" src="img/logo2.jpg" alt=".">
+    <hr>
+
+    <div class="container form-box">
+        <form class = "form-box">
+            <div class = "form-title">Fill your details Cadet:</div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="reg1">Name</label>
+                    <input type="text" class="form-control" id="reg1" placeholder="Enter your name">
+                    <div class="valid-feedback">Looks good!</div>
+                    <!-- <div class="invalid-feedback">Please provide a valid Name.</div> -->
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="reg2">DOB</label>
+                    <input type="date" class="form-control" id="reg2" placeholder="DOB">
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="reg3">Contact</label>
+                    <input type="text" class="form-control" id="reg3" placeholder="Contact number">
+                </div>
+                <div class="invalid-feedback">Invalid Number.</div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="reg4">Email</label>
+                    <input type="email" class="form-control" id="reg4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="reg5">Password</label>
+                    <input type="password" class="form-control" id="reg5" placeholder="Password">
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="reg6"> Confirm Password</label>
+                    <input type="password" class="form-control" id="reg6" placeholder="Confirm Password">
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="reg7">City</label>
+                    <input type="text" class="form-control" id="reg7">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="reg">State</label>
+                    <select id="reg" class="form-control">
+                        <option selected>Assam</option>
+                        <option>Arunachal Pradesh</option>
+                        <option>Bihar</option>
+                        <option>Chattisgarh</option>
+                        <option>Gujrat</option>
+                        <option>Goa</option>
+                        <option>Himachal Pradesh</option>
+                        <option>Jharkhand</option>
+                        <option>Jammu and Kashmir</option>
+                        <option>Karnataka</option>
+                        <option>Kerela/option>
+                        <option>Madhya Pradesh</option>
+                        <option>Tamil Nadu</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="reg9">Pincode</label>
+                    <input type="text" class="form-control" id="reg9" placeholder="Pincode">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <button class = "btn btn-info" id="fileupload-example-5">
+                        <input type="file">
+                        <span>Photo</span>
+                    </button>
+                </div>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="form-check form-check-inline">
+                    <button class = "btn btn-info" id="fileupload-example-5">
+                        <input type="file">
+                        <span>Relevant Documnets</span>
+                    </button>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="reg10">
+                    <label class="form-check-label" for="reg10">I accept the terms and conditions and all the risks involved</label>
+                </div>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: url(img/background.jpg);
+    background-size: cover;
+    cursor: url('img/cur40.png'),auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.logo{
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    max-width: 150px;
+}
+.logo2{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    max-width: 150px;
+    border-radius: 50%;
+}
+hr{
+    position: relative;
+    background-color: #fff;
+    max-width: 75vw;
+    margin-left: 12.5vw;
+    margin-top: -50px!important;
+}
+.title {
+    font-family: 'Faster One', cursive;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-align: center;
+    margin: 3rem auto;
+    font-size: 4rem;
+    position: relative;
+    font-weight: 100;
+}
+.size{
+    font-size: 4rem;
+    font-family: 'Permanent Marker',cursive;
+    color: #fff;
+    position: relative;
+    margin-top: 5vh;
+    text-align: center;
+}
+.e1{
+    letter-spacing: 0.3rem;
+    word-spacing: 0.8rem;
+}
+.box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.size div{
+    margin: 30px;
+}
+.e2, .e3{
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding: 40px;
+    /* margin-bottom: 35px!important; */
+    /* cursor: none; */
+    transition: ease-in 300ms;
+}
+.e2:hover, .e3:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.fix{
+    position: absolute;
+    left: 4%;
+    top: 25%;
+    transform: skewY(-2deg);
+    transition: all 2000ms;
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.img1, .img2, .soldier{
+    max-width: 250px!important;
+    max-height: 240px!important;
+    margin: 40px;
+    border-radius: 100%;
+}
+.soldier{
+    transform: skewY(0deg);
+    transition: all 2500ms;
+}
+.img-box{
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: flex-start;
+    width: 40vw;
+    margin-top: 90px;
+    margin-left: 120px;
+    transform: skewY(-4deg);
+    transition: all 2000ms;
+}
+.img-box p{
+    text-align: center;
+    color: #fff;
+    font-family: 'Marck Script',cursive;
+    font-size: 1.5rem;
+}
+.img2{
+    background-color: #fff;
+}
+.join-box{
+    /* background-color: bisque; */
+    margin:50px;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 50px;
+    border-radius: 20px;
+    transform: skewY(0deg);
+    transition: all 2000ms;
+}
+.gun{
+    position: absolute;
+    /* background-color: #fff; */
+    max-height: 250px;
+    top: 40%;
+    right: 20%;
+    transform: rotate(90deg);
+    transition: all 900ms;
+}
+.img1, .img2{
+    transition: 250ms ease-in;
+    box-shadow: 6px 7px 10px rgba(255, 255, 255, 0.2);
+}
+ .soldier{
+     box-shadow: 6px 7px 10px rgba(255, 255, 255, 0.2);
+    transition: all 1500ms;
+ }
+.logo{
+    box-shadow: 0px 0px 8px 5px rgba(80, 10, 10, 0.562);
+    border-radius: 50%;
+}
+.logo2{
+    box-shadow: 0px 0px 8px 5px rgba(230, 228, 228, 0.562);
+    border-radius: 50%;
+}
+.img1:hover, .img2:hover, .soldier:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+.dummy1{
+    font-size: 1.6rem;
+}
+.dummy2{
+    font-size: 1rem;
+}
+.dummy1, .dummy2{
+    transition: all 1700ms;
+    color:#fff;
+}
+
+
+
+
+/*
+    **************************
+    ********register**********
+    **************************
+    ************************** */
+
+.form-box{
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.192);
+    padding: 30px;
+    margin-top: -15px;
+}
+.form-box label{
+    color: #fff;
+}
+.form-box button{
+    position: relative;
+    display: block;
+    margin: 30px auto;
+}
+.form-title{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.3rem;
+    color: #fff;
+    position: relative;
+    margin-bottom: 50px;
+    text-decoration-line: underline;
+}
+#reg-im{
+    height: 0%;
+    width: 0%;
+}
+.hide-it {
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+#fileupload-example-5 {
+    position: relative;
+    overflow: hidden;
+}
+#fileupload-example-5 input {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.001;
+}
+.login {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 60vw;
+    margin-left: 20vw;
+    /* border: 2px solid rgb(22, 21, 21); */
+    background-color: rgba(255, 255, 255, 0.151);
+    padding: 0px 0px;
+    margin-top: 15vh;
+    flex-wrap: wrap;
+    border-radius: 40px;
+}
+.head {
+    max-height: 40px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    padding: 10px;
+    font-family: sans-serif, arial;
+    word-spacing: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+.login-img {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    float: left !important;
+}
+.login form {
+    padding: 20px 50px;
+    width: 40vw;
+    color: #fff;
+}
+.but {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+}
+.but button {
+    margin: auto 30px;
+    padding: 8px 22px;
+}
+
+
+
+
+/*
+    **************************
+    ******expert-group********
+    **************************
+    ************************** */
+.section {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: rgba(221, 101, 101, 0.973); */
+}
+.chat-box {
+    background: linear-gradient(to right, rgb(82, 3, 3) 0.5%,  rgba(109, 39, 39, 0.76) 19.5%, rgba(190, 190, 190, 0) 80%);
+    width: 70vw;
+    border-radius: 10px;
+    /* height: 50px; */
+    cursor: pointer;
+    transition: 500ms;
+    border: 1px solid rgba(97, 97, 97, 0.521);
+    margin: 3px auto;
+    color: rgba(240, 240, 239, 0.747);
+}
+
+.chat-box h3 {
+    padding: 10px 10px;
+}
+.chat-box:hover {
+    background-color: #292727;
+    color: aliceblue;
+    box-shadow: inset 1px 1px 10px 4px #c1c1c1;
+}
+.search-bar {
+    width: 60vw;
+    transition-duration: 800ms;
+    margin: 30px auto;
+    margin-bottom: 30px !important;
+}
+.search-bar:active {
+    width: 60.2vw;
+}
+.search-bar button {
+    color: #fff;
+}
+h1 {
+    color: #fff!important;
+    font-family: 'Marck Script',cursive;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*
+    **************************
+    ********application*******
+    **************************
+    ************************** */
+
+.application{
+    position: relative;
+    background: linear-gradient(135deg, rgba(109, 0, 25, 1) 0%, rgba(169, 3, 41, 1) 54%, rgba(169, 3, 41, 1) 55%, rgba(169, 3, 41, 1) 55%, rgba(169, 3, 41, 1) 55%);
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px 5px rgba(167, 41, 41, 0.534);
+}
+#profile-title{
+    text-decoration-line: underline;
+}
+.pro-img{
+    float: right;
+}
+.pro-img img{
+    border-radius: 50%;
+    max-width: 200px;
+    margin-right: 30px;
+}
+.pd{
+    margin-left: 30px;
+}
+.application p{
+    padding-left: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 0px;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(82, 3, 3) 0.5%, rgba(109, 39, 39, 0.76) 19.5%, rgba(190, 190, 190, 0) 80%);
+}
+.button-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+.reject{
+    background-color: #292727;
+    color: #fff;
+    transition: ease-in 300ms;
+}
+.reject:hover {
+    background-color: #111010;
+    color: #fff;
+    opacity: 1;
+}
+
+
+/*
+    **************************
+    ********admin*******
+    **************************
+    ************************** */
+
+.trash {
+    float: right;
+}
+.trash-box {
+    background: linear-gradient(to right, rgb(82, 3, 3) 0.5%, rgba(109, 39, 39, 0.76) 40.5%, rgba(190, 190, 190, 0) 80%);
+    width: 10vw;
+    border-radius: 10px;
+    /* height: 50px; */
+    cursor: pointer;
+    transition: 500ms;
+    border: 1px solid rgba(97, 97, 97, 0.521);
+    margin: 3px 3px;
+    color: rgba(240, 240, 239, 0.747);
+}
+
+.trash-box h3 {
+    padding: 10px 10px;
+}
+
+.trash-box:hover {
+    background-color: #292727;
+    color: aliceblue;
+    box-shadow: inset 1px 1px 10px 4px #c1c1c1;
+}
+
+/* //////////////////login//////////////// */
+
